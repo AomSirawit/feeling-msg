@@ -4,7 +4,7 @@ web structure
 - ejs
 - express
 - sql2
-web feature
+  web feature
 - add username
 - add your message
 - display to front of website
