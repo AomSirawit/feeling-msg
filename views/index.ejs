@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Send you</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="logo">
+            <h1>ITFeature</h1>
+        </div>
+
+        <ul class="nav-ul" id="js-menu">
+            <li class="nav-li"><a href="/" class="nav-a" style="color:#256aa2">หน้าหลัก</a></li>
+            <li class="nav-li"><a href="/contact"class="nav-a">ติดต่อ</a></li>
+            <li class="nav-li"><a href="/support"class="nav-a">สนับสนุน</a></li>
+        </ul>     
+    </nav>
+
+    <div class="heading"><p>คุณอยากบอกอะไรที่เป็นความลับแล้วไม่อยากบอกให้คนอื่นรู้มั้ย? <br> งั้นบอกที่นี่เลย</p></div>
+    <div class="heading-btn">
+        <button id="openmessage-btn"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+    </div>
+
+<!-- Popup form -->
+
+    <div class="form-popup" id="myform">
+        <form class="form-container" action="/user/add" method="POST">
+            <h2>ใส่ข้อความของคุณ</h2>
+
+            <label for="name">ชื่อของคุณ</label>
+            <input type="text" name="nameValue" class="name-input">
+            <label for="text-comment">ใส่ข้อความของคุณ</label>
+            <textarea class="text-input" name="msgValue" id="comment" cols="30" rows="10"></textarea>
+            <button type="submit" class="submit-btn">ส่งข้อความ</button>
+            <button type="button" id="closeform" class="close-btn">ปิดหน้าต่างนี้</button>
+
+        </form>
+
+    </div>
+    
+<!-- Create Gird -->
+    <div class="gridContainer">
+
+
+        <% if (data.length > 0) { %>
+            <% for (let i = 0; i < data.length; i++) { %>
+        <div class="grid-item">
+        
+          <h3><%= data[i].name %></h3>
+          <p><%= data[i].msg %></p>
+
+        </div>
+        <% } %>
+  
+        <% } %>
+  
+    </div>
+
+
+    <script src="/js/webboard.js"></script>
+</body>
+</html>

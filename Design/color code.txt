@@ -1,0 +1,6 @@
+						Color Code
+Text : #040b11
+Background : #f7fafd
+Primary Button : #256aa2
+Secondary Button : #e2eef8
+Accent : #205c8d  

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #f7fafd;
+}
+.nav{
+    font-size: large;
+    color: #256aa2;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.nav-toggle{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.logo{
+    margin: 40px 0 40px 0;
+}
+.nav-ul{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+
+}
+.nav-li{
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-color: #256aa2;
+    border-top-width: 1px;
+    padding: 5px 50px;
+}
+.nav-a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: normal;
+    color: #040b11;
+}
+.nav-li:first-child{
+    margin-top: 0;
+}
+.nav-li:hover{
+    opacity: 0.5;
+}
+.active{
+    display: flex;
+}
+@media screen and (min-width: 800px){
+    .nav {
+        height: 80px;
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+    .nav-ul{
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    .nav-li{
+        display: inline-block;
+        margin:  0 70px 0 0;
+        text-align: left;
+        border-bottom: none;
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+}
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    color: #205c8d;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 50px; 
+}
+.box{
+    border-radius: 15px;
+    width: 400px; 
+    height: 450px; 
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.box img{
+    width: 100%;
+    border-radius: 15px;
+}
+.box h3{
+    color: #256aa2;
+    margin-top: 30px;
+}
+.box p{
+    color: hsl(220, 15%, 55%);
+}
+@media screen and (max-width: 600px){
+    .box{
+        width: 80%;
+    }
+
+}

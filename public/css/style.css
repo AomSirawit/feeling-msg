@@ -1,0 +1,230 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #f7fafd;
+}
+.nav{
+    font-size: large;
+    color: #256aa2;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.nav-toggle{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.logo{
+    margin: 40px 0 40px 0;
+}
+.nav-ul{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+
+}
+.nav-li{
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-color: #256aa2;
+    border-top-width: 1px;
+    padding: 5px 50px;
+}
+.nav-a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: normal;
+    color: #040b11;
+}
+.nav-li:first-child{
+    margin-top: 0;
+}
+.nav-li:hover{
+    opacity: 0.5;
+}
+.active{
+    display: flex;
+}
+@media screen and (min-width: 800px){
+    .nav {
+        height: 80px;
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+    .nav-ul{
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    .nav-li{
+        display: inline-block;
+        margin:  0 70px 0 0;
+        text-align: left;
+        border-bottom: none;
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+}
+.heading{
+    color: #040b11;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.heading-btn{
+    margin-top: 20px;
+    text-align: center;
+}
+.heading-btn button{
+    font-size: 30px;
+    height: 100px;
+    width: 500px;
+    border-radius: 20px;
+    border: none;
+    background-color: #256aa2;
+}
+.heading-btn button:hover{
+    transform: scale(1.04);
+    transition: .2s;
+    cursor: pointer;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    max-width: 500px;
+    padding: 20px;
+    color: #fff;
+    background-color: #256aa2;
+    margin: 0 auto;
+    height: 400px
+}
+.form-container h2{
+    color: #e2eef8;
+}
+.name-input{
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e2eef8;
+}
+.text-input{
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e2eef8;
+}
+.submit-btn{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #208d44;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    transform: scale(1.04);
+    transition: .2s;
+}
+.close-btn{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #b93a3a ;
+    color: #fff;
+    cursor: pointer;
+}
+.close-btn:hover{
+    transform: scale(1.04);
+    transition: .2s;
+}
+.form-popup{
+    display: none;
+    overflow: auto;
+    margin-top: 20px;
+}
+.err {
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    background: orangered;
+    width: 500px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 700px;
+}
+.gridContainer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.grid-item{
+    background-color: #222222;
+    color: #ccc;
+
+}
+
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: 14px;
+        margin: 10px;
+    }
+    .heading-btn button{
+        width: 80%;
+    }
+    .form-container{
+        width: 80%;
+    }
+    .name-input{
+        width: 80%;
+    }
+    .text-input{
+        width: 80%;
+    }
+    .submit-btn{
+        width: 80%;
+    }
+    .close-btn{
+        width: 80%;
+    }
+}
