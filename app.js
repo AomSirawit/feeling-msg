@@ -8,21 +8,6 @@ const DB = require("./database")
 app.use(express.urlencoded({ extended: true }));
 
 
-//create the connection to database
-// const connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     database: 'test',
-//   });
-//   connection.connect((err) =>{
-//     if (err){
-//         console.log('Error connection to MySQL database =',err)
-//         return;
-//     }
-//     console.log('MySQL successfully connected!')
-// })
-  
-
 //route
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -43,17 +28,6 @@ const formController = require("./controllers/formController")
 
 app.get('/', indexController)
 app.post('/user/add', formController)
-
-
-
-
-
-
-
-
-
-
-
 
  app.get('/contact', (req ,res) =>{
      res.render("contact");

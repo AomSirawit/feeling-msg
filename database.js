@@ -6,7 +6,7 @@ const DB = mysql2.createPool({
   host: 'localhost',
   user: 'root',
   database: 'test_2',
-  password: '', // ไม่มั password ใช่ไหมครับ
+  password: '', 
   waitForConnections: true,
   connectionLimit: 10,
   maxIdle: 10, // max idle connections, the default value is the same as `connectionLimit`
