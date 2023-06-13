@@ -211,7 +211,7 @@ body{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .heading{
         font-size: 14px;
         margin: 10px;
@@ -233,5 +233,11 @@ body{
     }
     .close-btn{
         width: 80%;
+    }
+    .gridContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid-item{
+        width: 300px;
     }
 }
