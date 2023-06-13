@@ -183,24 +183,31 @@ body{
     overflow: auto;
     margin-top: 20px;
 }
-.err {
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    background: orangered;
-    width: 500px;
-    color: white;
-    border-radius: 10px;
-    margin-left: 700px;
-}
 .gridContainer{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    margin: 20px 0px 0px 50px;
 }
 .grid-item{
-    background-color: #222222;
-    color: #ccc;
+    background-color: #fff;
+    color: #040b11;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.grid-item h3{
+    color: #256aa2;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.underline{
+    border: 1px solid #ccc;
+}
+.grid-item p{
+    margin-top: 20px;
 
 }
 

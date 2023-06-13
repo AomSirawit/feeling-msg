@@ -96,6 +96,7 @@ body{
     color: #205c8d;
 }
 .form-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

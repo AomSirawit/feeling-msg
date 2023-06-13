@@ -49,13 +49,12 @@
     
 <!-- Create Gird -->
     <div class="gridContainer">
-
-
         <% if (data.length > 0) { %>
             <% for (let i = 0; i < data.length; i++) { %>
         <div class="grid-item">
-        
+          
           <h3><%= data[i].name %></h3>
+          <div class="underline"></div>
           <p><%= data[i].msg %></p>
 
         </div>

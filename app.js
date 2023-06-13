@@ -20,9 +20,6 @@ app.use(flash())
 app.use('/Design/', express.static('./Design'));
 
 
-
-
-
 const indexController = require("./controllers/indexController")
 const formController = require("./controllers/formController")
 
